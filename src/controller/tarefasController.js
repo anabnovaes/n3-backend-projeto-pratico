@@ -16,19 +16,24 @@ exports.getId = (req, res) => {
   }
 //obtendo os concluidos
   exports.getConcluidos = (req,res) =>{
-    const arrTarefas = []
-    for (let i = 0; i < tarefas.length; i++) {
-    const concluidos = {}
-    concluidos.id = tarefas[i].id;
-    concluidos.dataInclusao = tarefas[i].dataInclusao;
-    concluidos.concluido = tarefas[i].concluido;
-    concluidos.descricao = tarefas[i].descricao;
-    concluidos.nomeColaborador = tarefas[i].nomeColaborador;
-   
-    if (concluidos.concluido === true){
-     arrTarefas.push(concluidos);
-    };
-    
+    const arrConcluido = tarefas.filter(tarefa => tarefa.concluido === true);
+    res.status(200).send(arrConcluido);
+  }
+
+  // pesquisando por colaborador 
+  exports.getNomes =(req,res) =>{
+    const nomeColab = req.params.nome;
+    const arrTarefas = tarefas.filter(tarefa => tarefa.nomeColaborador === nomeColab)
+
+     if(arrTarefas.length === 0){
+      res.status(404)
+    }else{
+      res.status(200).send(arrTarefas);
     }
-    res.status(200).send(arrTarefas);
+    
+  }
+
+  // pesquisando rota por data de exibição
+  exports.getOrderByDate = (req, res)=>{
+    const data
   }
