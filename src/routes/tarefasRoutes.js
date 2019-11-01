@@ -5,6 +5,7 @@ const controller = require('../controller/tarefasController');
 router.get("/:id", controller.getId);
 router.get("/", controller.getTarefas);
 router.get("/concluidos/filtrar", controller.getConcluidos);
-router.get("/:nome/buscar", controller.getByName);
+router.get("/:nome/buscar", controller.getNomes);
+router.get("/dataInclusao/filtrar", controller.getOrdenadoPorData)
 
 module.exports = router
