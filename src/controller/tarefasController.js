@@ -1,16 +1,7 @@
 const tarefas = require('../model/lista-tarefas.json');
 
 
-  //função para transformar string em tipo date
-  function stringParaData(data){
-    const dataSplit = data.split("/");
-    const dataComSeparador = dataSplit[1] + '-' + dataSplit[0] + '-' +
-    dataSplit[2];   
-    const dataFormatada = new Date(dataComSeparador);
-    return dataFormatada;
-  }
-
-
+  
 //obtendo a rota pelo id 
 exports.getId = (req, res) => {
     const id = req.params.id
@@ -47,7 +38,17 @@ exports.getId = (req, res) => {
 
 
   // pesquisando rota por data de exibição
-  exports.getOrdenadoPorData = (req, res)=>{    
+  exports.getOrdenadoPorData = (req, res)=>{   
+    //função para transformar string em tipo date
+  function stringParaData(data){
+    const dataSplit = data.split("/");
+    const dataComSeparador = dataSplit[1] + '-' + dataSplit[0] + '-' +
+    dataSplit[2];   
+    const dataFormatada = new Date(dataComSeparador);
+    return dataFormatada;
+  }
+
+ 
  const datasOrdenadas = tarefas.sort(function (a, b) {
       if (stringParaData(a.dataInclusao) < stringParaData(b.dataInclusao)) {
         return 1;
