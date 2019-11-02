@@ -16,7 +16,7 @@ Para desenvolver o projeto utilizei a tecnologia Node JS. O download do Node é 
 Após clonar o repositório você deverá iniciar o node pelo seguinte comando 
 
 ```sh
-npm init 
+npm install 
 
 ```
 
