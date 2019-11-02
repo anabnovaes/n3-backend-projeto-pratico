@@ -9,7 +9,7 @@ Exibir via API uma listagem de tarefas, com rotas para listagem por ID, nome col
 
 ## Tecnologias usadas
 
-Para desenvolver o projeto utilizei a tecnologia Node JS. O download do Node é feito neste [link](https://nodejs.org/en/). A instalação é feita pelo procedimento padrão de instalação (next => next => ok). Para o download dos pacotes utilizei o NPM, porém este pacote é opcional e poderá ser usado conforme desejado.
+Para desenvolver o projeto utilizei a tecnologia Node JS. O download do Node é feito neste [link](https://nodejs.org/en/). A instalação é feita pelo procedimento padrão de instalação (next => next => ok). Para o download dos pacotes utilizei o NPM, porém você poderá usadr o gerenciador de pacotes de sua preferência.
 
 ## Instalação
 
@@ -17,6 +17,7 @@ Após clonar o repositório você deverá iniciar o node pelo seguinte comando
 
 ```sh
 npm init 
+
 ```
 
 ## Endpoints utilizados
