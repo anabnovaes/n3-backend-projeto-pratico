@@ -27,6 +27,7 @@ npm install
 
 ```
 
+Se você está utilizando outro gerenciador de pacotes apenas altere o npm para seu respectivo programa
 
 ## Endpoints utilizados
 
