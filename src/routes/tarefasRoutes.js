@@ -7,6 +7,6 @@ router.get("/", controller.getTarefas);
 router.get("/concluidos/filtrar", controller.getConcluidos);
 router.get("/:nome/buscar", controller.getNomes);
 router.get("/dataInclusao/filtrar", controller.getOrdenadoPorData)
-router.get("/concluidos/tempoTarefa", controller.getTempoConclusao)
+router.get("/concluidos/duracaoTarefa", controller.getTempoConclusao)
 
 module.exports = router

@@ -28,8 +28,10 @@ GET /:id => Exibe os dados de acordo com o ID inserido
 
 GET /  => Exibe todas as tarefas incluídas
 
-GET /concluidos/filtrar => Exibe apenas as tarefas concluídas
+GET tarefas/concluidos/filtrar => Exibe apenas as tarefas concluídas
 
-GET /:nome/buscar => Exibe apenas os dados do nome filtrado
+GET tarefas/:nome/buscar => Exibe apenas os dados do nome filtrado
 
-GET /dataInclusao/filtrar => Ordena a exibição de acordo com as datas mais recentes
+GET tarefas/dataInclusao/filtrar => Ordena a exibição de acordo com as datas mais recentes
+
+GET tarefas/concluidos/duracaoTarefa => Exibe a duração em dias da tarefa caso a mesma tenha sido concluída
