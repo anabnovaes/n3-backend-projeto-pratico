@@ -13,7 +13,7 @@ Para desenvolver o projeto utilizei a tecnologia Node JS. O download do Node é 
 
 ## Instalação
  
- Para clonar este repositório você deverá acessar o git bash (Windows) ou terminal (Linux, MAC) e digitar o seguinte comando
+ Para clonar este repositório você deverá acessar o git bash (Windows) ou terminal (Linux, MAC) e digitar o seguinte comando:
 
 ```sh
 git clone https://github.com/anabnovaes/n3-backend-projeto-pratico.git 
@@ -27,11 +27,11 @@ npm install
 
 ```
 
-Se você está utilizando outro gerenciador de pacotes apenas altere o npm para seu respectivo programa
+Se você está utilizando outro gerenciador de pacotes apenas altere o npm para seu respectivo instalador.
 
 ## Endpoints utilizados
 
-Os endpoints criados foram os seguintes
+Os endpoints criados foram os seguintes:
 
 GET /:id => Exibe os dados de acordo com o ID inserido
 
